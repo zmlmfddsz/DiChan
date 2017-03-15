@@ -1,0 +1,225 @@
+/*小标题样式开始*/
+
+.subtitle {
+	font-size: 13px;
+	color: #B5B5B5;
+	padding-bottom: 30px;
+}
+
+
+/*小标题样式结束*/
+
+
+/*form样式开始*/
+
+.form {
+	line-height: 28px;
+}
+
+.form li {
+	padding-bottom: 24px;
+}
+
+.form li>span,
+.form .f_right {
+	float: left;
+}
+
+.form li>span {
+	width: 175px;
+	text-align: right;
+	font-size: 16px;
+}
+.form .valEmail{
+	text-decoration: underline;
+}
+.form input {
+	width: 290px;
+	height: 28px;
+	border: 1px solid #b6b6b6;
+	text-indent: 5px;
+}
+.form input[type='radio']{
+	width: 0;
+	height: 0;
+}
+.form textarea{
+	width: 400px;
+	height: 125px;
+	border: 1px solid #b6b6b6;
+	resize: none;
+	vertical-align: top;
+}
+
+.form li i{
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 14px;
+	color: #42a7ff;
+	
+}
+.form textarea+i{
+	padding-left: 5px;
+}
+/*提交按钮样式开始*/
+.form .save{
+	width: 106px;
+	font: 16px/30px "微软雅黑";
+	background: #0097FF;
+	display: block;
+	border-radius: 5px;
+	color: #fff;
+	margin-left: 180px;
+	text-align: center;
+}
+.form .save:hover{
+	background: #40b1ff;
+}
+
+.form .real_name{
+	float: left;
+}
+/*提交按钮样式结束*/
+
+
+
+/*form样式结束*/
+
+
+/*下拉框样式开始*/
+.select{
+	line-height: 26px;
+	height: 26px;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+.select .tip{
+	border: 1px solid #DCDDDD;
+	border-radius: 3px;
+	font-size: 14px;
+	height: 26px;
+}
+
+.select ul{
+	width: 100%;
+	line-height: 26px;
+	font-size: 14px;
+	background: #fff;
+	position: absolute;
+	border: 1px solid #DCDDDD;
+	box-sizing: border-box;
+	text-indent: 10px;
+	display: none;/*--------------------*/
+	margin-top: -2px;
+	max-height: 180px;
+	overflow: auto;
+}
+.select li{
+	padding: 0;
+	cursor: pointer;
+}
+
+.select li:hover{
+	background: #EEEEEE;
+}
+
+.select .tip u{
+	padding: 0 10px;
+}
+
+.select .tip u,.select .tip div{
+	float: left;
+}
+
+.select .tip div{
+	margin-top: -1px;
+}
+.select .tip i{
+	display: block;
+	width: 20px;
+	height: 14px;
+	float: none;
+	padding: 0;
+	border-radius: 0 3px 0 0 ;
+	background: #0e9eff url(../images/up.png) no-repeat center center;
+}
+.select .tip i:last-child{
+	border-radius:0 0 3px 0 ;
+	background-image:url(../images/down.png);
+}
+
+
+/*下拉框样式结束*/
+
+/*单选框样式开始 */
+.radio p{
+	background: url(../images/info_27.png) no-repeat 0 center;
+	float: left;
+	text-indent: 22px;
+	padding-right: 10px ;
+	cursor: pointer;
+}
+.radio .checked{
+	background-image: url(../images/info_25.png);
+}
+
+
+/*单选框样式结束*/
+
+
+/*表格样式开始*/
+.tableInfo{
+	width: 790px;
+	margin: 0 auto 30px;
+	line-height: 32px;
+	border-spacing: 0 10px;
+	border-collapse: separate;
+	text-align: center;
+}
+.tableInfo th{
+	text-align: center;
+}
+.subtitle2{
+	border-bottom: 1px dashed #bebebe;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	margin-bottom: 24px;
+}
+.word{
+	float: left;
+    width: 20px;
+}
+
+/*表格样式结束*/
+
+/*专长样式开始*/
+.feat .tip span {
+    color: #b5b5b5;
+}
+.feat .feats {
+    padding: 15px 0 30px;
+}
+
+.hot-feat h6{
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #BEBEBE;
+	padding-right: 30px;
+}
+
+.hot-feat h6 a{
+	float: right;
+	background: url(../images/update.png) no-repeat 0 center;
+	padding-left: 20px;
+}
+.hot_feat_list{
+	padding-top: 30px;
+}
+
+
+
+
+
+
+/*专长样式结束*/
+

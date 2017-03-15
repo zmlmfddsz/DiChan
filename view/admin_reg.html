@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<style>
+			.box{
+				width: 500px;
+				height: 300px;
+				border: 1px solid lightpink;
+				margin: 50px auto;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h2>用户注册</h2>
+			用&nbsp;&nbsp;户&nbsp;&nbsp;名：<input type="text" /><br /><br />
+			密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="text" /><br /><br />
+			确认密码：<input type="text" /><br /><br />
+			<button>注册</button>
+		</div>
+			
+		
+		
+		
+		<script src="common/js/jquery-1.7.2.min.js"></script>
+		<script>
+			$(function(){
+				
+				
+				//1.点击按钮进行验证并提交
+				$('button').click(function(){
+					//2.获取元素
+					var inputs = $('input');
+					var uname = inputs.eq(0);
+					var upwd = inputs.eq(1);
+					var upwd1 = inputs.eq(2);
+					
+					//3.对用户名和密码进行正则匹配
+					//用户名：以字母开头,其余的是字母数字下划线均可，6-18位
+					//密码：匹配任意字符，但是不能包含空格，6-16位
+					if(!/^[a-z]\w{5,17}$/i.test(uname.val())){
+//						alert("用户名格式不正确！");
+//						return false;
+					}
+					
+					
+					if(!/^\S{6,16}$/gi.test(upwd.val())||upwd.val()!=upwd1.val()){
+//						alert("密码格式不正确！或者两次密码不一致");
+//						return false;
+					}
+					
+					
+					//4.发送ajax请求
+					$.ajax({
+						type:"post",
+						url:"../admin/register",
+						data:{uname:uname.val(),upwd:upwd.val()},
+						success:function(txt){							
+							var data = $.parseJSON(txt);
+							
+							if(data.error){
+								alert(data.error);
+								return false;
+							}else{
+								alert("注册成功！");
+								window.location.href = '../admin/index';
+							}
+						}
+					});
+					
+					//5 
+					
+					return false;
+					
+				});
+			
+			})
+			
+		</script>
+	</body>
+</html>

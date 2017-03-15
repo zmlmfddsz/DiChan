@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<style>
+			.box{
+				width: 500px;
+				height: 300px;
+				border: 1px solid lightpink;
+				margin: 50px auto;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h2>用户登录</h2>
+			用&nbsp;&nbsp;户&nbsp;&nbsp;名：<input type="text" /><br /><br />
+			密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="text" /><br /><br />
+			<button>登录</button>
+		</div>
+			
+		
+		
+		
+		<script src="common/js/jquery-1.7.2.min.js"></script>
+		<script>
+			$(function(){
+				
+				
+				//1.点击按钮进行验证并提交
+				$('button').click(function(){
+					//2.获取元素
+					var inputs = $('input');
+					var uname = inputs.eq(0);
+					var upwd = inputs.eq(1);
+				
+					
+					//4.发送ajax请求
+					$.ajax({
+						type:"post",
+						url:"../admin/login",
+						data:{uname:uname.val(),upwd:upwd.val()},
+						success:function(txt){							
+							var data = $.parseJSON(txt);
+						
+							if(data.error){
+								alert(data.error);
+								return false;
+							}else{
+								alert("登录成功！");
+								window.location.href = '../info/';
+							}
+						}
+					});
+					
+					//5 
+					
+					return false;
+					
+				});
+						
+			})
+			
+		</script>
+	</body>
+</html>

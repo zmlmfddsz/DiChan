@@ -1,0 +1,9 @@
+.feat .feats a {
+    float: left;
+    line-height: 24px;
+    padding: 0 6px;
+    background: #0e9eff;
+    color: #fff;
+    margin-right: 13px;
+    margin-bottom: 7px;
+}

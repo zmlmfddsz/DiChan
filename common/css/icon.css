@@ -1,0 +1,96 @@
+.save{
+	margin-left: 180px;
+	width: 106px;
+	font: 16px/30px "微软雅黑";
+	text-align: center;
+	background: #0097ff;
+	border-radius: 5px;
+	display: block;
+	color: #fff;
+	margin-top: 50px;
+}
+.subtitle{
+	font-size: 13px;
+	color: #b5b5b5;
+	padding-bottom: 30px;
+}
+
+
+/**/
+.icon_l,.icon_r,.user_icon,.icon_l>div>div{
+	float: left;
+}
+
+.icon_l{
+	width: 580px;
+	padding-left: 60px;
+	border-right: 1px solid #DDDDDD;
+}
+.icon_l>div{
+	height: 220px;
+}
+.icon_l>div>div{
+	margin-top: 120px;
+}
+.user_icon{
+	width: 220px;
+	height: 220px;
+	margin-right: 40px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+.icon_l div a,.upload_btn{
+	display: block;
+	font:16px/40px "微软雅黑";
+	text-align: center;
+	color: #FFFFFF;
+	background: #363D40;
+	width: 220px;
+	margin-top: 10px;
+}
+
+
+
+
+.icon_r{
+	padding-left: 30px;
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+.icon_r h3{
+	font-size: 16px;
+}
+
+.icon_r .w72{
+	width: 72px;
+	height: 72px;
+}
+.icon_r .w18{
+	width: 18px;
+	height: 18px;
+}
+
+.icon_r img{
+	margin: 10px 0;
+	width: 32px;
+	height: 32px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+.icon_r p:last-of-type{
+	
+	padding-top: 25px;
+}
+
+.icon_r .list img{
+	float: left;
+	margin-right: 20px;
+}
+
+.upload_btn{
+	background: #0e9eff;
+}
+
+#upload_icon-queue{
+	display: none;
+}
